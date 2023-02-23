@@ -1,0 +1,35 @@
+{
+  "availability-zones:account=844540003076:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ],
+  "vpc-provider:account=844540003076:filter.vpc-id=vpc-0d1d5813bdbb63154:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0d1d5813bdbb63154",
+    "vpcCidrBlock": "10.0.0.0/24",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "isolated",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0ca56339bb31d1b98",
+            "cidr": "10.0.0.0/25",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0cd8c05f6f00f6493"
+          },
+          {
+            "subnetId": "subnet-05ad5392b80273986",
+            "cidr": "10.0.0.128/25",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-0286841aa27f6b4c1"
+          }
+        ]
+      }
+    ]
+  }
+}
